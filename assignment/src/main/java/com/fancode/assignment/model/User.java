@@ -1,13 +1,13 @@
 package com.fancode.assignment.model;
 
-import java.util.List;
-
 public class User {
     private int id;
     private String name;
+    private String username;
+    private String email;
     private Address address;
-    private List<Todo> todos;
 
+    // Getters and Setters
     public int getId() {
         return id;
     }
@@ -24,6 +24,22 @@ public class User {
         this.name = name;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public Address getAddress() {
         return address;
     }
@@ -32,11 +48,74 @@ public class User {
         this.address = address;
     }
 
-    public List<Todo> getTodos() {
-        return todos;
-    }
+    public static class Address {
+        private String street;
+        private String suite;
+        private String city;
+        private String zipcode;
+        private Geo geo;
 
-    public void setTodos(List<Todo> todos) {
-        this.todos = todos;
+        // Getters and Setters
+        public String getStreet() {
+            return street;
+        }
+
+        public void setStreet(String street) {
+            this.street = street;
+        }
+
+        public String getSuite() {
+            return suite;
+        }
+
+        public void setSuite(String suite) {
+            this.suite = suite;
+        }
+
+        public String getCity() {
+            return city;
+        }
+
+        public void setCity(String city) {
+            this.city = city;
+        }
+
+        public String getZipcode() {
+            return zipcode;
+        }
+
+        public void setZipcode(String zipcode) {
+            this.zipcode = zipcode;
+        }
+
+        public Geo getGeo() {
+            return geo;
+        }
+
+        public void setGeo(Geo geo) {
+            this.geo = geo;
+        }
+
+        public static class Geo {
+            private String lat;
+            private String lng;
+
+            // Getters and Setters
+            public String getLat() {
+                return lat;
+            }
+
+            public void setLat(String lat) {
+                this.lat = lat;
+            }
+
+            public String getLng() {
+                return lng;
+            }
+
+            public void setLng(String lng) {
+                this.lng = lng;
+            }
+        }
     }
 }
