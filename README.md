@@ -1,5 +1,5 @@
 # FanCode-SDET-Assignment
-Assignment
+Assignment submission by Bojja Srikar.
 ## Description
 This project checks if users from the city "FanCode" have completed more than half of their todos.
 
