@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Author: Bojja Srikar
+ */
+
 @RestController
 @RequestMapping("/api")
 public class FanCodeController {
@@ -20,7 +24,7 @@ public class FanCodeController {
         this.apiService = apiService;
     }
 
-    @GetMapping("/check-fancode-users")
+    @GetMapping("/check-fancode-users") //Endpoint to check and return users from "FanCode" city who have completed more than half of their todos.
     public ResponseEntity<List<String>> checkFanCodeUsers() {
         List<User> users = apiService.getFanCodeUsers();
         List<String> result = users.stream()

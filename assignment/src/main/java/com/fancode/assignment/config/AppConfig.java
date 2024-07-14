@@ -5,8 +5,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * Author: Bojja Srikar
+ */
+
 @Configuration
 public class AppConfig {
+
+    /**
+     * Provides a RestTemplateBuilder bean.
+     *
+     * @return a RestTemplateBuilder instance
+     */
 
     @Bean
     public RestTemplateBuilder restTemplateBuilder() {

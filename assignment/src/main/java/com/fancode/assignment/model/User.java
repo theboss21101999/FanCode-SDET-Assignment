@@ -1,5 +1,10 @@
 package com.fancode.assignment.model;
 
+/**
+ * Represents a user with details such as name, email, and address.
+ * Author: Bojja Srikar
+ */
+
 public class User {
     private int id;
     private String name;
@@ -48,6 +53,8 @@ public class User {
         this.address = address;
     }
 
+    //Represents an address with details such as street, suite, city, and geo coordinates.
+
     public static class Address {
         private String street;
         private String suite;
@@ -95,7 +102,7 @@ public class User {
         public void setGeo(Geo geo) {
             this.geo = geo;
         }
-
+//Represents geographic coordinates with latitude and longitude.
         public static class Geo {
             private String lat;
             private String lng;

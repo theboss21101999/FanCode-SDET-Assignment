@@ -1,5 +1,9 @@
 package com.fancode.assignment.model;
 
+/**
+ * Represents a todo task assigned to a user.
+ * Author: Bojja Srikar
+ */
 public class Todo {
     private int userId;
     private int id;
