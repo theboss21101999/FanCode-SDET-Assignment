@@ -10,6 +10,7 @@ This project checks if users from the city "FanCode" have completed more than ha
 
 ## Endpoints
 - `GET /api/check-fancode-users` - Returns the list of users from "FanCode" who have completed more than half of their todos.
+![Screenshot](fancode.png)
 
 ## Testing
 - Run tests using `mvn test`.
